@@ -42,6 +42,7 @@
      * 特别注意：根控件为 DrawerLayout时，应为内容布局的适当位置（例如Title布局中，根布局）设置此属性，抽屉布局设置此属性无效（文章后面有举例），自己注意设置paddingTop或marginTop
      */
      （需要放在Bassactivity  的onCreate内）
+     
     public void setBarStyle() {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -57,7 +58,7 @@ recyclerview 多布局   以及recyclewview 中可动态显示指定行数的tex
 
 
 
-  try {//解决华为手机切换后台再次打开app时应用重启情况
+  try {//解决华为手机切换后台再次打开app时应用重启情况（放在欢迎页activity的onCreate内）
             if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0) {
                 finish();
                 return;
