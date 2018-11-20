@@ -17,6 +17,7 @@
            
            
 文字适配（需要放在Bassactivity）
+
     @Override
     public Resources getResources() {
         try {
