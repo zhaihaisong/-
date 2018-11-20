@@ -4,7 +4,9 @@ import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Rect;
 import android.support.annotation.Nullable;
+import android.text.Html;
 import android.text.Layout;
+import android.text.Spanned;
 import android.text.StaticLayout;
 import android.text.TextPaint;
 import android.util.AttributeSet;
@@ -35,7 +37,11 @@ public class ExpandTextView extends android.support.v7.widget.AppCompatTextView 
     /**
      * 省略文字
      */
-    final String ellipsizeText = "...";
+    final String ellipsizeText = "[展开]";
+    /**
+     * 省略文字颜色
+     */
+    final String color = "#1d53bb";
 
     public ExpandTextView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -51,14 +57,16 @@ public class ExpandTextView extends android.support.v7.widget.AppCompatTextView 
         int lineCount = sl.getLineCount();
         if (lineCount > maxLineCount) {
             if (mExpanded) {
-                setText(mText);
+                Spanned spanned = Html.fromHtml(mText +  "<font color='" + color + "'> [收起]</font>");
+                setText(spanned);
+//                setText(mText);
                 mCallback.onExpand();
             } else {
                 lineCount = maxLineCount;
 
                 // 省略文字的宽度
                 TextPaint paint = getPaint();
-                float dotWidth = paint.measureText(ellipsizeText);
+                float dotWidth = paint.measureText(" "+ellipsizeText);
 
                 // 找出第 showLineCount 行的文字
                 int start = sl.getLineStart(lineCount - 1);
@@ -75,11 +83,16 @@ public class ExpandTextView extends android.support.v7.widget.AppCompatTextView 
                         break;
                     }
                 }
+//                // 新的第 showLineCount 的文字
+//                String newEndLineText = lineText.substring(0, endIndex) + ellipsizeText;
+//                // 最终显示的文字
+//                setText(mText.substring(0, start) + newEndLineText);
 
                 // 新的第 showLineCount 的文字
-                String newEndLineText = lineText.substring(0, endIndex) + ellipsizeText;
+                String newEndLineText = lineText.substring(0, endIndex) + "<font color='" + color + "'> " + ellipsizeText + "</font>";
                 // 最终显示的文字
-                setText(mText.substring(0, start) + newEndLineText);
+                Spanned spanned = Html.fromHtml(mText.substring(0, start) + newEndLineText);
+                setText(spanned);
 
                 mCallback.onCollapse();
             }
@@ -101,12 +114,13 @@ public class ExpandTextView extends android.support.v7.widget.AppCompatTextView 
 
     /**
      * 设置要显示的文字以及状态
+     *
      * @param text
      * @param expanded true：展开，false：收起
      * @param callback
      */
     public void setText(String text, boolean expanded, Callback callback) {
-        LogUtils.e("0000000"+text);
+        LogUtils.e("0000000" + text);
         mText = text;
         mExpanded = expanded;
         mCallback = callback;
@@ -117,6 +131,7 @@ public class ExpandTextView extends android.support.v7.widget.AppCompatTextView 
 
     /**
      * 展开收起状态变化
+     *
      * @param expanded
      */
     public void setChanged(boolean expanded) {
