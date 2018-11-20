@@ -16,8 +16,7 @@
     implementation 'me.jessyan:autosize:1.0.6'
            
            
-文字适配 
-    //适配字体（需要放在Bassactivity）
+文字适配（需要放在Bassactivity）
     @Override
     public Resources getResources() {
         try {
