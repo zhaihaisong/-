@@ -57,13 +57,19 @@
 recyclerview 多布局   以及recyclewview 中可动态显示指定行数的textview
 
 
+解决华为手机切换后台再次打开app时应用重启情况（放在欢迎页activity的onCreate内）
 
-  try {//解决华为手机切换后台再次打开app时应用重启情况（放在欢迎页activity的onCreate内）
+   @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        try {
             if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0) {
                 finish();
                 return;
             }
         } catch (Exception E) {
         }
+    }
+    
         
         
