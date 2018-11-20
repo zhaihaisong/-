@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <!--案件名称 以及案件状态-->
+        <LinearLayout
+            android:paddingTop="11dp"
+            android:paddingBottom="12dp"
+            android:id="@+id/anjian_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="140dp"
+
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/anjian_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:text="毛清曲与鹤壁中泰矿业有限公司劳动争议纠纷"
+                    android:textColor="#333333"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="-140dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+
+                >
+
+                <TextView
+                    android:id="@+id/anjian_type"
+                    android:layout_width="75dp"
+                    android:layout_height="25dp"
+                    android:layout_marginRight="27dp"
+                    android:background="@drawable/login_yanzhengma"
+                    android:gravity="center"
+                    android:text="未排期"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--横线-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="#f0f0f0" />
+        <!--所属法院-->
+        <TextView
+            android:id="@+id/ss_fayuan"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="所属法院：郑州市金水区人民法院"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+        <!--开庭时间-->
+        <TextView
+            android:id="@+id/kt_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="开庭时间：2017-11-28 10:00:00"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

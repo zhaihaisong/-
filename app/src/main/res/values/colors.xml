@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 黑白透明度色素 -->
+    <color name="transparent">#00000000</color>
+    <color name="Black_transparent_black_percent_10">#1A000000</color>
+    <color name="Black_transparent_black_percent_15">#26000000</color>
+    <color name="Black_transparent_black_percent_20">#33000000</color>
+    <color name="Black_transparent_black_percent_25">#40000000</color>
+    <color name="Black_transparent_black_percent_30">#4D000000</color>
+    <color name="Black_transparent_black_percent_35">#59000000</color>
+    <color name="Black_transparent_black_percent_40">#66000000</color>
+    <color name="Black_transparent_black_percent_45">#73000000</color>
+    <color name="Black_transparent_black_percent_5">#0D000000</color>
+    <color name="Black_transparent_black_percent_50">#80000000</color>
+    <color name="Black_transparent_black_percent_55">#8C000000</color>
+    <color name="Black_transparent_black_percent_60">#99000000</color>
+    <color name="Black_transparent_black_percent_65">#A6000000</color>
+    <color name="Black_transparent_black_percent_70">#B3000000</color>
+    <color name="Black_transparent_black_percent_75">#BF000000</color>
+    <color name="Black_transparent_black_percent_80">#CC000000</color>
+    <color name="Black_transparent_black_percent_85">#D9000000</color>
+    <color name="Black_transparent_black_percent_90">#E6000000</color>
+    <color name="Black_transparent_black_percent_95">#F2000000</color>
+    <color name="White_transparent_white_percent_10">#1Affffff</color>
+    <color name="White_transparent_white_percent_15">#26ffffff</color>
+    <color name="White_transparent_white_percent_20">#33ffffff</color>
+    <color name="White_transparent_white_percent_25">#40ffffff</color>
+    <color name="White_transparent_white_percent_30">#4Dffffff</color>
+    <color name="White_transparent_white_percent_35">#59ffffff</color>
+    <color name="White_transparent_white_percent_40">#66ffffff</color>
+    <color name="White_transparent_white_percent_45">#73ffffff</color>
+    <color name="White_transparent_white_percent_5">#0Dffffff</color>
+    <color name="White_transparent_white_percent_50">#80ffffff</color>
+    <color name="White_transparent_white_percent_55">#8Cffffff</color>
+    <color name="White_transparent_white_percent_60">#99ffffff</color>
+    <color name="White_transparent_white_percent_65">#A6ffffff</color>
+    <color name="White_transparent_white_percent_70">#B3ffffff</color>
+    <color name="White_transparent_white_percent_75">#BFffffff</color>
+    <color name="White_transparent_white_percent_80">#CCffffff</color>
+    <color name="White_transparent_white_percent_85">#D9ffffff</color>
+    <color name="White_transparent_white_percent_90">#E6ffffff</color>
+    <color name="White_transparent_white_percent_95">#F2ffffff</color>
+
+    <!-- 基本色素 -->
+    <color name="bg_gray">#ecedef</color>
+    <color name="color_black">#000000</color>		<!-- 纯黑 -->
+    <color name="color_red">#FF0000</color>			<!-- 纯红 -->
+    <color name="color_white">#FFFFFF</color>		<!-- 纯白 -->
+    <color name="color_orange">#FFA500</color>		<!-- 橙色 -->
+    <color name="color_gold">#FFD700</color>		   <!-- 金色 -->
+    <color name="color_yellow">#FFFF00</color>		<!-- 纯黄 -->
+    <color name="color_green">#008000</color>		<!-- 纯绿 -->
+    <color name="color_cyan">#7DC869</color>		   <!-- 青色 -->
+    <color name="color_blue">#0000FF</color>		   <!-- 纯蓝 -->
+    <color name="color_purple">#800080</color>		<!-- 紫色 -->
+    <color name="color_qianlan">#586C95</color>		<!-- 浅蓝色 -->
+    <color name="color_qianhui">#BABABD</color>		<!-- 浅灰色 -->
+    <color name="login_bavk">#F2F2F2</color>		<!-- 浅灰色 -->
+
+    <color name="login_submit_normal_bg">#5CACEE</color>
+    <color name="login_title">#1d53bb</color>
+    <color name="login_submit_click_bg">#7D9EC0</color>
+
+    <!-- 扫描二维码 -->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+
+    <!-- 图片选择器 -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_green">#00AA00</color>
+    <color name="row_active">#efefef</color>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#a93409</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent_black">#94333232</color>
+    <color name="checkbox_color">#FB4846</color>
+    <color name="checkbox_unchecked_color">#DFDFDF</color>
+    <color name="search_icon_color">@android:color/white</color>
+</resources>

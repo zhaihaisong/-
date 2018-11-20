@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="13dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="案件类型"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <com.Jason.app.view.listener.ExpandTextView
+            android:id="@+id/type_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:text="民事案件（2017）桂0222刑初340号应路生诉胡飞追偿权纠纷"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+</LinearLayout>

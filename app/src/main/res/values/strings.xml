@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DEMO</string>
+
+    <string name="lets_go">立即体验</string>
+    <string name="kongge2">\u3000\u3000</string>
+<string name="inputType">0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+    <string name="wel_tip_one">hello , world !</string>
+    <string name="wel_tip_three">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;红&#160;莲&#160;即&#160;将&#160;绽&#160;放&#160;，&#160;双&#160;星&#160;终&#160;会&#160;汇&#160;聚&#160;，&#160;命&#160;运&#160;的&#160;转&#160;轮&#160;已&#160;经&#160;开&#160;始&#160;，&#160;请&#160;您&#160;耐&#160;心&#160;地&#160;等&#160;待</string>
+</resources>

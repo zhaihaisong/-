@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#20000000"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="-30dp"
+            android:id="@+id/tip_ic"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tip_ic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:gravity="bottom"
+            android:text="远  程  庭  审"
+            android:textColor="#6d6d6d"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

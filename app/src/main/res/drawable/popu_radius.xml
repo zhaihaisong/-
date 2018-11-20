@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 矩形的圆角弧度 -->
+    <!--<corners android:radius="30dp" />-->
+    <!-- 矩形的填充色 -->
+    <solid android:color="#ffffff" />
+    <!-- 左边是圆角，右边还是直角 -->
+    <corners
+        android:topLeftRadius="5dp"
+        android:bottomLeftRadius="5dp"
+        android:topRightRadius="5dp"
+        android:bottomRightRadius="5dp"  />
+    <!--<stroke-->
+        <!--android:width="2px"-->
+        <!--android:color="#60797979" />-->
+
+</shape>

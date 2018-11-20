@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--tite数据-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/login_title"
+            android:fitsSystemWindows="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/back_onc"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@mipmap/login_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="返回"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人脸识别"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"></LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:background="@drawable/saomiao"
+                android:id="@+id/saomiaokuang"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请先将人脸放入扫描框内" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/img_take_picture"
+        android:background="@drawable/login_yanzhengma"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:text="拍摄认证"
+        android:textSize="16sp"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"
+      />
+
+
+</FrameLayout>
+
