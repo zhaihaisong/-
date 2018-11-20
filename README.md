@@ -59,7 +59,7 @@ recyclerview 多布局   以及recyclewview 中可动态显示指定行数的tex
 
 解决华为手机切换后台再次打开app时应用重启情况（放在欢迎页activity的onCreate内）
 
-   @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         try {
